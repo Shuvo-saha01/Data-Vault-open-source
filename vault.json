@@ -1,0 +1,40 @@
+{
+    "auth": {
+        "salt": "ba575ea86b6f2816e5a35992ed59ff09",
+        "hash": "6ef6450981c37de135ed0c3b965df1b02950d994c8cecb344c54895c2c796468",
+        "iterations": 600000
+    },
+    "recovery": {
+        "mode": "text",
+        "questions": [
+            "Your first school name",
+            "Your nickname",
+            "Your favourite fruit"
+        ],
+        "answers": [
+            "lycee",
+            "priyanshu",
+            "mango"
+        ]
+    },
+    "encrypted_key_master": {
+        "salt": "0ef07276e245e311e32e026a31b348ea",
+        "iv": "746fa49f845516ca075708a1",
+        "ciphertext": "4503b59fb17a6f620503868c60ed90454510f2bfda1fffecb98d67b8b804ba640d746e58768a66c324f123f8f2376cbe081b4c2743f3cf4df1c21fa4a6e65c10c87f31aaf222171e9d8f42e83d404a74"
+    },
+    "encrypted_key_recovery": {
+        "salt": "e9a8882783a2ae52cd1ab8f1b6330e0b",
+        "iv": "e10a53339a9c6ffd2d080049",
+        "ciphertext": "79fa977a4687918d84c3d47cce3122a0a51a021997ad0f17cd1b18ba91423cb447240ed537c0a304b9f099a288d53bfd03f5c781e1e60c3bbb5e4b4a1309ff8fd6aeb39168a614c3d859728231d1c191"
+    },
+    "passwords": [
+        {
+            "site": "github",
+            "data": {
+                "iv": "d8b90fdbcf5abb5883ccc28b",
+                "ciphertext": "169eb99f2e9531d90e6e21bffc39699e9b200851"
+            }
+        }
+    ],
+    "vault_key": null
+}
