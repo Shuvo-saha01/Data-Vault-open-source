@@ -6,10 +6,9 @@ from core.password_gen import generate_strong_password
 
 def main():
     print("=" * 40)
-    print("   🔐 Data Vault - Offline Password Manager")
+    print("   ?? Data Vault - Offline Password Manager")
     print("=" * 40)
 
-    # Step 1: Register or Login
     print("\n1. Register")
     print("2. Login")
     choice = input("Choose: ").strip()
@@ -21,15 +20,14 @@ def main():
     elif choice == "2":
         master = input("Enter master password: ").strip()
         if not login(master):
-            print("❌ Wrong password! Access denied.")
+            print("? Wrong password! Access denied.")
             return
-        print("✅ Login successful!")
+        print("? Login successful!")
 
     else:
         print("Invalid choice!")
         return
 
-    # Step 2: Main Menu
     while True:
         print("\n" + "=" * 40)
         print("1. Save a password")
@@ -51,17 +49,17 @@ def main():
             label = input("Label to retrieve: ").strip()
             try:
                 pwd = get_password(master, label)
-                print(f"🔑 Password: {pwd}")
-                print("⏳ Hiding in 30 seconds...")
+                print(f"?? Password: {pwd}")
+                print("? Hiding in 30 seconds...")
                 time.sleep(30)
-                print("🔒 Password hidden!")
+                print("?? Password hidden!")
             except KeyError as e:
                 print(e)
 
         elif action == "3":
             labels = list_labels()
             if labels:
-                print("📋 Saved labels:", labels)
+                print("?? Saved labels:", labels)
             else:
                 print("No passwords saved yet!")
 
@@ -75,10 +73,10 @@ def main():
         elif action == "5":
             length = input("Password length (default 16): ").strip()
             length = int(length) if length else 16
-            print("🔑 Generated:", generate_strong_password(length))
+            print("?? Generated:", generate_strong_password(length))
 
         elif action == "6":
-            print("👋 Goodbye!")
+            print("?? Goodbye!")
             break
 
         else:
